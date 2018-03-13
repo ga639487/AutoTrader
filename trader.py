@@ -36,7 +36,7 @@ if __name__ == '__main__':
         data.append(row[3])
         day+=1
     f.close()
-    with open('output.csv', 'w') as csv_writer:
+    with open(args.output, 'w') as csv_writer:
         csv_writer.write('0')
         csv_writer.write('\n')
         for i in range(1, day-1):
